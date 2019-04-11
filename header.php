@@ -5,9 +5,7 @@
     <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +17,39 @@
 <body <?php body_class(); ?>>
   <header>
 
-      <div class="top-menu">
-        <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+    <!-- HAMBURGER BUTTON -->
+    <div class="hamburger-wrapper">
+      <div class="hamburger-menu"></div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-container">
+      <div class="mobile-menu">
+        <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu' ) ); ?>
       </div>
 
-    <div class="container">
+      <div class="social-icons">
+        <a href="#" alt="Facebook" title="Facebook" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
 
-      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal-black.png"></a>
-        <div class="main-menu-container">
+        <a href="#" alt="Twitter" title="Twitter" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+
+        <a href="#" alt="Instagram" title="Twitter" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN MENU -->
+    <div class="main-menu-container">
+      <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></a>
+        <div class="main-menu">
           <?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
         </div>
     </div>
+
   </header>
 <main>
