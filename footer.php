@@ -4,7 +4,7 @@
 
 	</div> <!-- /.container -->
 
-  	<div class="copyright">&copy; <?php echo date("Y"); ?> Site Title</div>
+  	<div class="copyright">&copy; <?php echo date("Y"); ?>Site Title</div>
 
   </footer>
   <?php wp_footer(); ?>

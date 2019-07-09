@@ -20,7 +20,7 @@
             <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
-      </div> <!-- END conatiner -->
+      </div> <!-- END container -->
     </div> <!-- END banner -->
      
     <div class="main-container">

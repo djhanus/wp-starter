@@ -1,9 +1,9 @@
-<?php get_header(); /* Template Name: 404 Error */ ?>
+<?php get_header(); /* Template Name: 404 */ ?>
 
   <div class="page-standard">
      
     <div class="main-container">
-        404 error. Page not found.
+        404 Error. Page not found.
     </div> <!-- END main container -->
   
   </div>

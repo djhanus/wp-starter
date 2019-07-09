@@ -1,0 +1,17 @@
+// IMPORT RESPONSIVE PAGE ARRAYS
+@import '_page-home-responsive';
+@import '_page-about-responsive';
+@import '_page-contact-responsive';
+
+// GLOBAL STYLES (MOBILE RESPONSIVE)
+@media (min-width: 768px) and (max-width: 1024px) {
+
+} // END DESKTOP
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+} // END TABLET
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+} // END MOBILE

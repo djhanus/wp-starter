@@ -1,5 +1,4 @@
 <?php get_header(); /* Template Name: Standard Page */ ?>
-
   <div id="page-standard">
      
     <div class="container">
