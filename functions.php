@@ -3,7 +3,6 @@
 // ENQUEUE GLOBAL SCRIPTS
 function enqueue_parent_styles() {
   wp_enqueue_style('THEMENAME-style',   get_stylesheet_directory_uri() .'/style.css', array(), null, 'all');
-  wp_enqueue_script('bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', false, null, true);
   wp_enqueue_script('jquery-script',    'https://code.jquery.com/jquery-3.3.1.min.js', false, null, true);
   wp_enqueue_style('font-awesome',      'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
   wp_enqueue_script('burger-script',    get_stylesheet_directory_uri() .'/js/burger.js', false, null, true);
@@ -35,6 +34,7 @@ function create_posttypes() {
           'rewrite' => array('slug' => 'events'),
       )
   );
+}
 add_action( 'init', 'create_posttypes' );
 
 // ACF OPTIONS PANEL

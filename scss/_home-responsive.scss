@@ -1,11 +1,21 @@
+// HOME RESPONSIVE ---------------------------- *
+
+// LARGE
+@media (min-width: 1024px) and (max-width: 1600px) {
+
+} 
+
+// MEDIUM
 @media (min-width: 768px) and (max-width: 1024px) {
 
-} // END DESKTOP
+} 
 
+// NARROW
 @media (min-width: 481px) and (max-width: 767px) {
 
-} // END TABLET
+}
 
+// MOBILE
 @media (min-width: 320px) and (max-width: 480px) {
 
-} // END MOBILE
+}

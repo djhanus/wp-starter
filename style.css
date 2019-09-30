@@ -3,13 +3,12 @@
  Theme URI:    local
  Description:  starter theme for custom wp sites
  Author:       DJH
- Author URI:   https://thisisblueline.com
+ Author URI:   https://djhanus.me
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-/* RESET */
-@import url("mobile.css");
+/* HTML RESET */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,36 +69,45 @@ table {
 
 html,
 body {
-  font-family: Arial, sans;
+  font-family: Arial, sans-serif;
   background: #FFFFFF;
   height: auto;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 html p,
 body p {
   font-size: 16px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
   color: black;
   padding-bottom: 20px;
 }
+html h1, html h2, html h3, html h4, html h5, html h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: Georgia, serif;
+}
 html h1,
 body h1 {
-  font-size: 32px;
+  font-size: 48px;
   margin: 15px 0px;
   color: black;
   font-weight: bold;
 }
 html h2,
 body h2 {
-  font-size: 28px;
+  font-size: 36px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
 }
 html h3,
 body h3 {
-  font-size: 22px;
+  font-size: 28px;
   margin: 15px 0px;
   color: black;
   font-weight: normal;
@@ -115,7 +123,8 @@ body ul li,
 body ol li {
   padding-bottom: 10px;
 }
-html img.alignright,
+html .alignright, html img.alignright,
+body .alignright,
 body img.alignright {
   margin-left: 1.5em;
   display: inline;
@@ -123,7 +132,8 @@ body img.alignright {
   height: auto;
   max-width: 350px;
 }
-html img.alignleft,
+html .alignleft, html img.alignleft,
+body .alignleft,
 body img.alignleft {
   margin-right: 1.5em;
   display: inline;
@@ -131,7 +141,8 @@ body img.alignleft {
   height: auto;
   max-width: 350px;
 }
-html img.aligncenter,
+html .aligncenter, html img.aligncenter,
+body .aligncenter,
 body img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -139,6 +150,24 @@ body img.aligncenter {
   clear: both;
   height: auto;
   max-width: 550px;
+}
+html .wp-caption,
+body .wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px;
+}
+html .wp-caption img,
+body .wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+html .wp-caption p.wp-caption-text,
+body .wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0;
 }
 html blockquote,
 body blockquote {
@@ -162,7 +191,20 @@ main {
 
 .container {
   width: 100%;
+  max-width: 1080px;
   margin: 0 auto;
+}
+
+.placeholder {
+  width: 100%;
+  max-width: 1080px;
+  margin: 100px auto;
+  padding: 50px;
+  background-color: #f0f0f0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  color: black;
 }
 
 header {
@@ -204,7 +246,8 @@ header .main-menu-container .main-menu ul li a {
   margin: 0px 5px;
 }
 header .main-menu-container .main-menu ul li a:hover {
-  color: cyan;
+  color: blue;
+  text-decoration: underline;
 }
 header .mobile-menu-container {
   z-index: 10000;
@@ -248,7 +291,7 @@ header .mobile-menu-container .social-icons svg {
 }
 header .mobile-menu-container .social-icons i:hover,
 header .mobile-menu-container .social-icons svg:hover {
-  color: cyan;
+  color: blue;
 }
 header .hamburger-wrapper {
   z-index: 100000;
